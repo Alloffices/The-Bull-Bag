@@ -1,0 +1,208 @@
+/*------------ Global Form Style ----------------*/
+input[type=text], input[type=email], input[type=tel], input[type=password], select, textarea {
+	width: 100%;
+	font-family: inherit;
+	font-size: 12px;
+	padding:5px;
+	margin: 0px;
+	border: solid 1px #ccc;
+	border-radius: none;
+}
+input[type=submit], input[type=button] {
+	border: none;
+	background: #333;
+	color: #fff;
+	padding: 10px;
+	font-family: inherit;
+	font-size: 14px;
+	margin: 0px !important;
+}
+textarea {
+	height: 125px;
+}
+/*------------ Custom Form Style ----------------*/
+.quote input, .quote select, .quote textarea {
+	margin: 0 0 20px;
+}
+/*------------ Ecommerce Form Style --------------*/
+.ecommerce input[type=text], .ecommerce input[type=email], .ecommerce input[type=tel], .ecommerce input[type=password], .ecommerce select, .ecommerce textarea {
+	margin: 0px 0px 5px;
+}
+.loginInfo {
+	margin-bottom: 20px;
+	border-bottom: solid 1px #e8e8e8;
+}
+.notification {
+	float: right;
+	border: 1px solid #CCC;
+	background: none repeat scroll 0% 0% #EEE;
+	padding: 15px;
+	line-height: 17px;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+.ecommerce h1 {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: solid 1px #e8e8e8;
+}
+.ecommerce h4 {
+	float: left;
+	padding-right: 20px;
+}
+.ecommerce h5 {
+	float: left;
+	font-weight: 300;
+	font-size: 14px;
+}
+.ecommerce h4 + .wrap, .ecommerce h5 + .wrap, .ecommerce #sameInfo + .wrap, .ecommerce h5 + #sameInfo {
+	clear: left;
+}
+.ecommerce #sameInfo {
+	padding: 50px;
+	background: #fff;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	top: 30px;
+}
+.formFieldLabel {
+	width: 33% !important;
+	float: left;
+	display:inline-block;
+	line-height: 15px;
+	padding-top: 1px;
+}
+.payment .formFieldLabel {
+	padding-top: 5px;	
+}
+.formFieldInput {
+	width: 67% !important;
+	float: left;
+	padding-left: 15px;
+}
+.formFieldInputSmall {
+	width: 32.5% !important;
+	float: left;
+	padding-left: 15px;
+	margin-right: 2% !important;
+}
+.formFieldInputSmall + .formFieldInputSmall {
+	margin-right: 0 !important;
+}
+.formFieldInput input, .formFieldInput textarea, .formFieldInput select {
+	width: 100%;
+}
+.formFieldInput textarea {
+	min-height: 100px;
+}
+.cart input[type=text] {
+	width: 46%;
+	margin-right: 3%;
+	float: left;
+}
+.cartItem {
+	padding: 20px !important;
+	margin-bottom: 0px !important;
+}
+.cartItem:nth-child(even) {
+ background: #eee;
+}
+.shoppingCart .cart, .reviewOrder .cart {
+	margin: 0 !important;
+	left: 0 !important;
+	list-style-type: none;
+}
+.cart .itemDetails {
+	padding-left: 10px;
+	margin-bottom: 0px;
+}
+.cart .itemImg {
+	margin-bottom: 0px;
+}
+.cart h4 {
+	display: block;
+	float: none;
+}
+.cart .quantity {
+	margin-bottom: 0;
+}
+.cart .quantity .two {
+	margin-bottom: 5px;
+}
+.cart input[type=button] {
+	background: url(../images/up-arrow.png) no-repeat center center / 40% #333;
+	border: solid 1px #fff;
+	padding: 5px 7px;
+}
+.cart input[type=button] + input[type=button] {
+	background: url(../images/down-arrow.png) no-repeat center center / 40% #333;
+}
+.cartTotal {
+	float: right;
+	text-align: right;
+	padding: 10px;
+	margin-right: 0;
+	width: 25%;
+}
+fieldset .four {
+	border-right: solid 1px #fff;
+}
+.reviewOrder span.columns.three {
+	width: 100%;
+	clear: left;
+	margin-bottom: 0;
+}
+.reviewOrder .shippingTaxTotal .two {
+	padding-right: 20px;
+}
+.reviewOrder .shippingTaxTotal .four + .four {
+	margin-right: 0;
+}
+.reviewOrder .shippingTaxTotal strong {
+	display: block;
+	width: 100%;
+	clear:left;
+}
+.reviewOrder .shippingTaxTotal input.four + input.four {
+	float: right;
+}
+.paymentCenter .loginInfo {
+	padding-bottom: 20px;
+}
+ @media screen and (max-width:1024px) {
+.formFieldLabel, .formFieldInput {
+ width: 100% !important;
+ padding: 0px !important;
+ margin-bottom: 10px !important;
+}
+.ecommerce #mainContent {
+ padding: 20px;
+}
+}
+@media screen and (max-width:767px) {
+.ecommerce #mainContent {
+ padding: 0px !important;
+}
+.ecommerce h1 {
+ padding: 20px;
+}
+/*.ecommerce #mainContent .shoppingCart .itemImg{
+	display: none !important;
+}*/
+.shoppingCart .quantity .two {
+ width: 48% !important;
+ margin-right: 2%;
+ margin-bottom: 0px !important;
+ padding-bottom: 0px !important;
+}
+.shoppingCart input[type=button] {
+ padding: 5px 10px;
+}
+.shoppingCart .itemCost, .shoppingCart .totalCost {
+ width: 48% !important;
+ margin-right: 2% !important;
+ margin-bottom: 0 !important;
+ padding-bottom: 0px !important;
+}

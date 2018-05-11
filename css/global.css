@@ -1,0 +1,347 @@
+/*HTML Reset*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	background:transparent;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, img, menu, nav, section {
+	display:block;
+}
+input, select {
+	vertical-align:middle;
+}
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*--------------- Hurricane Specials ---------------*/
+
+.specialsbar {
+	background-color: #d30128;
+	height:92px;
+	width:100%; 
+	padding:8px; 
+	display: table;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.specialsbar img {
+    width: 402px;
+    height: 92px;
+	max-width: 402px;
+}
+
+#special-left {
+	display:table;
+	float:left;
+	width:200px;
+}
+
+#special-right {
+	display:table;
+	float:right;
+	width:auto;
+}
+
+.buttona {
+	float:right;
+	display: inline-block;
+}
+
+.buttonwrap {
+	width:200px;
+	max-width:300px;
+	border-radius:10px;
+	background-color:#ffffff; 
+	color:#000000;
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+	font-size:24px;
+	float:right;
+	font-weight:bold;
+	padding:15px 10px;
+	margin-right:20px;
+	margin-top:20px;
+	text-align: center;
+	text-decoration: none !important;
+}
+
+.buttonwrap:hover {
+	background-color:#000000; 
+	color:#ffffff;
+}
+
+@media screen and (max-width: 860px){
+	
+.specialsbar img {
+width: 100%;
+    height: auto;
+margin: 0 auto;
+}
+	
+#special-left {
+	width: 100%;
+    margin: 0 auto;
+    float: none;
+}
+
+#special-right {
+	width: 100%;
+    margin: 0 auto;
+    float: none;
+}
+	
+.buttona {
+    float: none;
+    text-align: center;
+	width: 100%;
+}
+	
+.buttonwrap {
+    float: none;
+    text-decoration: none !important;
+    display: inline-block;
+	width: 100%;
+	margin: 6px 0;
+	padding: 15px 10px;
+}	
+	
+}
+
+
+
+
+/*--------------- Global Container ---------------*/
+body {
+	margin: 0px;
+	padding: 0px;
+	font-size: 13px;
+	line-height: 22px;
+	color: #444;
+	min-width: 1100px;
+}
+.globalContainer {
+	width: 1024px;
+	padding: 0px;
+	margin: 0 auto;
+	position: relative;
+}
+.wrap {
+	width: 100%;
+	position: relative;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.bg {
+	overflow: hidden;	
+	background: url(../images/bg.jpg) no-repeat center center / cover fixed;
+}
+/*--------------- Global Header Styles ---------------*/
+h1 {
+	font-size: 30px;
+	line-height: 34px;
+	margin-bottom: 10px;
+}
+h2 {
+	font-size: 24px;
+	line-height: 28px;
+	margin-bottom: 10px;
+	color: #C31130;
+}
+h3 {
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 10px;
+	color: #777;
+}
+h4 {
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 10px;
+}
+h5 {
+	font-size: 16px;
+	line-height:20px;
+	margin-bottom: 10px;
+}
+h6 {
+	font-size: 14px;
+	line-height:18px;
+	margin-bottom: 10px;
+}
+p {
+	font-size: 13px;
+	line-height: 20px;
+	margin: 0px 0px 20px 0px;
+	padding: 0px;
+	color: #444;
+	font-weight: 400;
+}
+hr {
+	margin: 20px 0px 20px 0px;
+	border-bottom: dotted 1px #ccc;
+	clear: both;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+}
+/*--------------- Global Link Styles ---------------*/
+a {
+	text-decoration: none;
+	color: #C31130;
+}
+a:hover {
+	text-decoration: underline;
+}
+a.generalBtn {
+	display: block;
+	padding: 10px 20px;
+	margin: 0;
+	background: #C31130;
+	color: #fff;
+	float: left;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#mainContainer a.generalBtn {
+	margin: 0 0 20px;	
+}
+/*--------------- Global List Styles ---------------*/
+#mainContainer ul, #mainContainer ol {
+	padding: 0px;
+	margin: 0px 30px 30px 0px;
+	position: relative;
+	left: 30px;
+}
+#mainContainer ul li, #gallery ul li, #mainContainer ol li, #gallery ol li {
+	padding: 0px;
+	margin-bottom: 5px;
+}
+/*--------------- Global Image Styles ---------------*/
+img {
+	max-width: 100%;
+	height: auto;
+}
+img[align=left] {
+	margin: 0 20px 20px 0;
+}
+img[align=right] {
+	margin: 0 0 20px 20px;
+}
+img[align=center] {
+	margin: 0 auto 20px;
+}
+.alignleft {
+	float: left;
+	margin: 10px 20px 20px 0;
+	display: block;
+}
+.alignright {
+	float: right;
+	margin: 10px 0 20px 20px;
+	display: block;
+}
+.aligncnenter {
+	text-align:center;
+	margin: 0 auto 20px;
+	display: block;
+}
+
+/*--------------- Global Column Styles ---------------*/
+.columns {
+	float: left;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 20px;
+}
+.one {
+	width: 100%;
+	float: none;
+	margin: 0;
+	padding: 0px;
+}
+.threeFour {
+	width: 74.5%;
+	margin-right: 2%;
+}
+.threeFour + .four, .four + .threeFour {
+	margin-right: 0;
+}
+.two {
+	width: 49%;
+	margin-right: 2%;
+}
+.two + .two {
+	margin-right: 0;
+}
+.twoThree {
+	width: 66%;
+	margin-right: 2%;
+}
+.twoThree + .three, .three + .twoThree {
+	margin-right: 0;
+}
+.three {
+	width: 32%;
+	margin-right: 2%;
+}
+.three + .three + .three {
+	margin-right: 0;
+}
+.four {
+	width:23.5%;
+	margin-right: 2%;
+}
+.four + .four + .four + .four {
+	margin-right: 0;
+}
+.five {
+	width: 18.4%;
+	margin-right: 2%;
+}
+.five + .five + .five + .five + .five {
+	margin-right: 0;
+}
+.six {
+	width: 	15%;
+	margin-right: 2%;
+}
+.six + .six + .six + .six + .six + .six {
+	margin-right: 0;
+}
+.columnContent {
+	padding: 20px;
+}
+.gutter {
+	padding: 20px;
+}
+@media screen and (min-width:1025px) {
+#menu-main-nav {
+ display: block !important;
+}
+#menu-main-nav li a.expand {
+	display: none;	
+}
+}
+@media screen and (max-width:1024px) {
+body {
+ min-width: 100%;
+}
+.bg {
+	overflow: hidden;	
+}
+.globalContainer {
+ width: 100%;
+}
+}
